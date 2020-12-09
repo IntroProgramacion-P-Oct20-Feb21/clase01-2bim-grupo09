@@ -14,8 +14,8 @@ public class Ejercicio01 {
     public static void main(String[] args) {
         
         for (int i = 97; i <= 122; i++) {                               
-            if ( (i==97) || (i==105) ) { 
-                System.out.printf("%s |%d|\n", (char)i, i);
+            if ( (i==97) || (i==101) || (i==105) || (i==111) || (i==117) ) { 
+                System.out.printf("%s (%d)\n", (char)i, i);
             }
             
         }
