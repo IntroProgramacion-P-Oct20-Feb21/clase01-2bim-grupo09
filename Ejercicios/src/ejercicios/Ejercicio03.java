@@ -12,6 +12,17 @@ package ejercicios;
 public class Ejercicio03 {
     public static void main(String[] args) {
         
+         int operacion;
+        
+        for (int i = 1; i <= 10; i++) {
+            for (int contador = 1; contador <= i; contador++) {
+                
+                System.out.printf("%s", "*");
+            }
+            System.out.println();
+        }
+        
+        
     }
     
 }
