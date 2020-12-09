@@ -27,13 +27,14 @@ public class Ejercicio02 {
         for (int i = 0; i < cadena.length(); i++) {
            
             char v = cadena.charAt(i);
+            int numerico = (int)v;
             
-            if ((cadena.charAt(i) >= 65)||(cadena.charAt(i)<=90)){
+            if ((numerico >= 65) && (numerico<=90)){
                 contador =  contador + 1;
                  
             }else{
-                if((cadena.charAt(i) >= 97) || (cadena.charAt(i)<= 122)){
-                    contador2 = contador + 1;
+                if((numerico>= 97) && (numerico<= 122)){
+                    contador2 = contador2 + 1;
                     
                     
                 }
@@ -41,7 +42,8 @@ public class Ejercicio02 {
 
         }
         
-        System.out.printf("La frase es: %s\nLetras minusculas: %s\nLetras mayusculas: %s\n",cadena,contador,contador2);
+        System.out.printf("La frase es: %s\nLetras mayusculas: %s\n"
+                + "Letras minusculas: %s\n",cadena,contador,contador2);
             
 
             
